@@ -17,7 +17,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
     <body>
-	    <nav class="navbar navbar-expand-sm" id="nav">			
+	    <nav class="navbar navbar-expand-sm nav">			
 			<a class="nav-link" href="AnaSayfa.html">Ana Sayfa</a>
             <a class="nav-link" href="#">Hakkımda</a>
 			<a class="nav-link" href="ozgecmis.html">Öz Geçmiş</a>
@@ -27,47 +27,57 @@
 			<a class="nav-link" href="iletisim.html">İletişim</a>
 			<a class="nav-link" href="giris.html">Giriş Yap</a>
 		</nav>    
-		<div class="row" id="hakkindaRow">
-		    <aside class="col-sm-3">
+		<section class="row" id="hakkindaRow">
+		    <aside class="col-sm-3 col-md-3">
 		        <figure class="text-center">
-				    <img src="Resimler/foto.jpg" id="">
+				    <img src="Resimler/foto.jpg">
 		        </figure>
 			</aside>
-		    <article class="col-sm-6" id="hakkindaCol">
+		    <article class="col-sm-6 col-md-6" id="hakkindaCol">
 		        <h1>Ben Kimim?</h1><br>
-			    <p>Adım Zeynep İnan. On sekiz yaşındayım. 2002 yılının Eylül ayında Ankara’da dünyaya geldim.Aslen Trabzonluyum.4 çocuklu bir ailenin en son üyesiyim.2 ablam 1 abim var. Film izlemek zamanımın büyük bir kısmını kaplar ve en sevdiğim film Zindan Adası’dır. En sevdiğim kitap ise George Orwell’ın 1984 adlı kitabıdır.Liseyi Fatih Anadolu Lisesinde tamamladım.Şu anda Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum.Aynı zamanda okulumdaki girişimcilik kulübüne üyeyim.En büyük hayalim üniversiteyi bitirdikten sonra birkaç yıl kendimi yurt dışında geliştirip Türkiye’ye dönmek </p>
+			    <p>&nbsp; &nbsp; Adım Zeynep İnan. On sekiz yaşındayım. 2002 yılının Eylül ayında Ankara’da dünyaya geldim.Aslen Trabzonluyum.4 çocuklu bir ailenin en son üyesiyim.2 ablam 1 abim var. Film izlemek zamanımın büyük bir kısmını kaplar ve en sevdiğim film Zindan Adası’dır. En sevdiğim kitap ise George Orwell’ın 1984 adlı kitabıdır.Liseyi Fatih Anadolu Lisesinde tamamladım.Şu anda Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum.Aynı zamanda okulumdaki girişimcilik kulübüne üyeyim.En büyük hayalim üniversiteyi bitirdikten sonra birkaç yıl kendimi yurt dışında geliştirip Türkiye’ye dönmek </p>
 		    </article>
-		</div>
-		<h1>Bakış Açımı Değiştiren Kitaplar</h1>		
-        <table>
-			<tr>
-			    <td class="text-center" id="Kitaplar">
-				    <figure>
-				        <img class="img-fluid" src="Resimler/leonardo.jpg">
-				    </figure>
-				</td>
-				<td class="text-center" id="Kitaplar">
-				    <figure>
-				        <img class="img-fluid" src="Resimler/hayvanCift.jpg"> <br> 
-				    </figure>
-				</td>	
-                <td class="text-center" id="Kitaplar">
-                    <figure>
-				        <img class="img-fluid" src="Resimler/1984.jpg"> <br> 
-				    </figure>
-				</td>				
-			</tr>	
-			<tr>	
-				<td id="Kitaplar">
-				    <p>Kitap Leonardonun son akşam yemeği eserini yaparken Yahudayı tasvir etmek için Yahuda kadar kötü bir insan aramasından bahsediyor.Bu kitapda beni kendine en çok çeken şey Leo Perutz'un "Kötü insan nasıl olmalıdır?" sorusuna verdiği cevaptı.</p>
-			    </td>
-				<td id="Kitaplar">
-				    <p>Bir çiftlikte yaşayan hayvanlar, kendilerini sömüren insanlara başkaldırıp çiftliğin yönetimini ele geçirir. Amaçları daha eşitlikçi bir topluluk oluşturmaktır. Aralarında en akıllı olan domuzlar, kısa sürede önder bir takım oluşturur; ama devrimi de yine onlar yolundan saptırır.Romandaki önder domuzun, Stalin'i simgeler.</p>
-				</td>			    
-				<td id="Kitaplar">
-				    <p>1984 yıllarındaki hayali bir dünyayı konu alır. Özgürlüğün olmadığı, yaşam kalitesinin diplerde olduğu bir dünyayı anlatır.Benim bu romanın en çok beğendiğim yanı durumlarının eskisinden çok daha iyi olduğuna inandırmak için kullndıkları yöntemlerdi. </p>
-				</td>
-			</tr>
-	    </table>		
+		</section>
+		<header>
+		    <h1>Bakış Açımı Değiştiren Kitaplar</h1>
+        </header>			
+        <article>
+		    <table id="table">
+			    <tr>
+			        <td class="text-center Kitaplar">
+				        <figure>
+				            <img class="img-fluid" src="Resimler/leonardo.jpg">
+				        </figure>
+				    </td>
+				    <td class="text-center Kitaplar">
+				        <figure>
+				            <img class="img-fluid" src="Resimler/hayvanCift.jpg"> <br> 
+				        </figure>
+				    </td>	
+                    <td class="text-center Kitaplar">
+                        <figure>
+				            <img class="img-fluid" src="Resimler/1984.jpg"> <br> 
+				        </figure>
+				    </td>				
+			    </tr>	
+			    <tr>	
+				    <td class="Kitaplar">
+				        <p>Kitap Leonardonun son akşam yemeği eserini yaparken Yahudayı tasvir etmek için Yahuda kadar kötü bir insan aramasından bahsediyor.Bu kitapda beni kendine en çok çeken şey Leo Perutz'un "Kötü insan nasıl olmalıdır?" sorusuna verdiği cevaptı.</p>
+			        </td>
+				    <td class="Kitaplar">
+				        <p>Bir çiftlikte yaşayan hayvanlar, kendilerini sömüren insanlara başkaldırıp çiftliğin yönetimini ele geçirir. Amaçları daha eşitlikçi bir topluluk oluşturmaktır. Aralarında en akıllı olan domuzlar, kısa sürede önder bir takım oluşturur; ama devrimi de yine onlar yolundan saptırır.Romandaki önder domuzun, Stalin'i simgeler.</p>
+				    </td>			    
+				    <td class="Kitaplar">
+				        <p>1984 yıllarındaki hayali bir dünyayı konu alır. Özgürlüğün olmadığı, yaşam kalitesinin diplerde olduğu bir dünyayı anlatır.Benim bu romanın en çok beğendiğim yanı durumlarının eskisinden çok daha iyi olduğuna inandırmak için kullndıkları yöntemlerdi. </p>
+				    </td>
+			    </tr>
+	        </table>
+		</article>
+        <footer class="row">
+		    <div class="col-sm-3 col-md-3"></div>
+			<div class="col-sm-2 col-md-2"><img src=""></div>
+			<div class="col-sm-6 col-md-6">Web-Teknolojileri-Projesi Zeynep İnan 2021</div>
+		    <div class="col-sm-1 col-md-1 "></div>
+	    </footer>		
     </body>
 </html>

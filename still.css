@@ -1,9 +1,9 @@
 #anasayfa
 {
-	background-image:url(Resimler/ana.jpg);	
+	background-image:url(Resimler/arkaPlan.jpg);	
 }
 
-#nav
+.nav
 {
 	background-color:black;
 }
@@ -36,12 +36,93 @@
 	margin:0% 0% 0% 7%;
 	padding:4% 3% 4% 3%;
 }
-#Kitaplar
+
+.Kitaplar
 {
 	padding:0% 2% 0% 3%;
 }
+
+footer
+{
+	margin:5% 0% 0% 0%;
+	background-color:black;
+	width:100%;
+	color:#85C1E9;
+}
+
 h1
 {
 	text-align:center;
 	font-family:Bell MT;
+}
+
+header>h1
+{
+	margin:3% 0%;
+	text-align:center;
+	font-family:Bell MT;
+}
+
+table
+{
+	height:100%;
+	width:50%;
+	text-align:center;
+}
+
+#table
+{
+	width:100%;
+}
+
+#cv
+{
+	margin:3% 60% 9% 20%;
+}
+
+.cvBilgileri
+{
+	text-align:left;
+}
+
+.slider
+{
+	margin:5% 0%;
+	text-align:center;
+}
+
+#ankara 
+{
+	padding:0% 8% 3% 7%;
+}
+
+.ankaraResimleri
+{
+	margin:0% 0% 3% 3%;
+}
+
+.ankaraAciklama
+{
+	margin:0% 1%;
+}
+
+.heykel
+{
+	margin:5% 2%;
+}
+
+#anitkabirİmg
+{
+	margin:0% 15%;
+	width:70%;
+}
+
+#anitkabirAciklama
+{
+	margin:5% 5%;
+}
+
+.mirasimiz
+{
+	margin:0% 2%;
 }

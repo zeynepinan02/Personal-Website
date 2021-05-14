@@ -8,6 +8,16 @@
 	background-color:black;
 }
 
+.arkaPlan
+{
+	background-color:#EAEDED;
+}
+
+.sayfaTasma
+{
+	overflow:hidden;
+}
+
 #anaBaslik
 {
 	text-align:center;
@@ -46,8 +56,15 @@ footer
 {
 	margin:5% 0% 0% 0%;
 	background-color:black;
-	width:100%;
 	color:#85C1E9;
+}
+
+#iletFooter
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
 }
 
 h1
@@ -66,18 +83,24 @@ header>h1
 table
 {
 	height:100%;
-	width:50%;
+	width:60%;
 	text-align:center;
 }
 
 #table
 {
 	width:100%;
+	text-align:center;
 }
 
-#cv
+.cv
 {
-	margin:3% 60% 9% 20%;
+	margin:1% 0%;
+}
+
+#onYazi
+{
+	padding:0% 0% 0% 1%;
 }
 
 .cvBilgileri
@@ -126,3 +149,22 @@ table
 {
 	margin:0% 2%;
 }
+
+.iletisim
+{
+	padding:3% 1% 2% 1%;
+	margin:3% 3% 2% 4%;
+	/*overflow:hidden;*/
+	background-color:#E5E8E8;
+	color:#273746;
+}
+
+.iletisimArka
+{
+	background-color:#F2F4F4;
+}
+
+/*.iletBoyut
+{
+	max-width:200%;
+}*/

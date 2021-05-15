@@ -59,7 +59,7 @@ footer
 	color:#85C1E9;
 }
 
-#iletFooter
+.iletFooter
 {
     position: fixed;
     bottom: 0px;
@@ -162,6 +162,24 @@ table
 .iletisimArka
 {
 	background-color:#F2F4F4;
+}
+
+.girisRow
+{
+	margin:0% 3% 0% 5%;
+}
+
+.girisCol
+{
+	margin:0% 5% 0% 5%;
+	padding:2% 1% 1% 1%;
+	background-color:#E5E8E8;
+	color:#273746;
+}
+
+.girisKontrol
+{
+	margin:5% 5% 2% 5%; 
 }
 
 /*.iletBoyut

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="tr-TR">
+    <head>
+	    <meta charset="utf-8">
+	    <title>Zeynep İnan Kişisel Web Sitesi</title> 
+		
+		<meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+		<meta name="discription" content="Zeynep İnan hakkında kişisel web sitesi">
+		<meta name="keywords" content="kişisel,web,sitesi">
+		
+		<link rel="stylesheet" href="still.css">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+    <body class="iletisimArka">
+	    <nav class="navbar navbar-expand-sm nav">			
+			<a class="nav-link" href="index.html">Ana Sayfa</a>
+            <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+			<a class="nav-link" href="ozgecmis.html">Öz Geçmiş</a>
+			<a class="nav-link" href="sehrim.html">Şehrim</a>
+			<a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+			<a class="nav-link" href="ilgiAlanlarim.html">İlgi Alanlarım</a>
+			<a class="nav-link" href="#">İletişim</a>
+			<a class="nav-link" href="giris.html">Giriş Yap</a>
+		</nav>			
+		
+		<header><h1>Bana Ulaşmak İçin</h1></header>
+		
+		<section class="sayfaTasma">
+		    <article class="row justify-content-md-center">
+		        <div class="col-sm-5 iletisim">
+			    
+				    <form action="ilet.php" onsubmit="return kontrol()">
+				    
+					    <label for="ad"><strong>Ad-Soyad:</strong></label><br>
+					    <input type="text" id="ad" name="ad" placeholder="Adınızı Giriniz" autofocus size="70"><br><br>
+					
+					    <strong>Cinsiyetiniz:</strong><br>
+					    <input type="radio" name="cinsiyet" value="Kadın">Kadın
+					    <input type="radio" name="cinsiyet" value="Erkek">Erkek
+					
+					    <br><br><label for="e-mail"><strong>E-Mail:</strong></label><br>
+					    <input type="text" id="e-mail" name="e-mail" placeholder="Mailinizi Giriniz" size="70"><br><br>
+					
+					    <strong>Mesaj:</strong><br>
+					    <textarea id="message" name="message" placeholder="İletmek İstediğiniz Mesajınızı Giriniz" rows="6" cols="70"></textarea><br><br>
+					
+					    <input type="reset" class="btn btn-outline-primary" value="Temizle">
+					    <input type="submit" class="btn btn-outline-primary" value="Gönder">
+				    </form>
+			    </div>
+		    </article>
+        </section>
+		<footer class="py-4">		 
+			<div class="text-center">Web-Teknolojileri-Projesi Zeynep İnan 2021</div>
+	    </footer>
+		
+		<script>
+		    function kontrol()
+			{
+			    var name=document.getElementById("ad").value;
+				if(name=="")
+				{
+				    alert("Ad kısmı boş bırakılamaz!");
+					return false;
+				}
+				
+				var mail=document.getElementById("e-mail").value;
+				if(mail=="")
+				{
+				    alert("Mail kısmı boş bırakılamaz!");
+					return false;
+				}
+				
+				var mailFormat=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+				if(!mailFormat.test(mail))
+				{
+				    alert("Geçersiz mail adresi!!!");
+					return false;
+				}
+				
+				var mesaj=document.getElementById("message").value;
+				if(mesaj=="")
+				{
+				    alert("Bir mesaj yazınız.");
+					return false;
+				}
+			}
+		</script>
+    </body>
+</html>

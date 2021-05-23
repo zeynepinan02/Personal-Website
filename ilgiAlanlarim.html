@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="tr-TR">
+    <head>
+	    <meta charset="utf-8">
+	    <title>Zeynep İnan Kişisel Web Sitesi</title> 
+		
+		<meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+		<meta name="discription" content="Zeynep İnan hakkında kişisel web sitesi">
+		<meta name="keywords" content="kişisel,web,sitesi">
+		
+		<link rel="stylesheet" href="still.css">
+		
+		<link rel="shortcut icon" href="Resimler/logo.ico">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+    <body class="arkaPlan">
+	    
+		<nav class="navbar navbar-expand-sm nav">			
+			<a class="nav-link" href="index.html">Ana Sayfa</a>
+            <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+			<a class="nav-link" href="ozgecmis.html">Öz Geçmiş</a>
+			<a class="nav-link" href="sehrim.html">Şehrim</a>
+			<a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+			<a class="nav-link" href="#">İlgi Alanlarım</a>
+			<a class="nav-link" href="iletisim.html">İletişim</a>
+			<a class="nav-link" href="giris.html">Giriş Yap</a>
+		</nav>			
+		
+		<section class="sayfaTasma">
+		    
+			<section class="row" id="hakkindaRow">
+		        
+				<aside class="col-sm-5 col-md-5">
+
+                    <div class="card">
+                        <div class="card-body"> <img class="card-img-top" src="Resimler/hobiler.png"> </div>
+                    </div>
+			    </aside>
+		        
+				<article class="col-sm-5 col-md-5" id="hobilerim">
+		            <h1>Hobilerim</h1><br>
+			        <p>&nbsp; &nbsp; <a href="hakkimda.html">Hakkımda</a> sayfasında da bahsettiğim gibi zamanımın büyük bir kısmını film izlemek alır. Bu yüzden film/dizi izlemek benim en büyük hobim diyebiliriz. Onun dışında boş zamanlarımd kitap okurum.Paten sürmeye bayılırım özellikle de buz pateni sürmeyi çok severim. Küçükken çok fazla paten sürerdim. Ayrıca paten kadar bisiklet sürmeyi de çok severim. Bir diğer hobim de seyahat etmek. Farklı yerler görmeyi farklı yemekler yemeği çok severim. </p>    
+				</article>
+				
+		    </section>
+			
+			<header>
+		        <h1>En Sevdiğim Filmler</h1>
+            </header>
+			
+			<article class="row">
+		        
+				<div class="col-sm-3 col-s-3 Filmler">
+                    <div class="card">
+                        <div class="card-header"> 
+						    <figure id="resim1"> </figure> 
+						</div>
+                        <div class="card-body" id="aciklama1"></div> 
+                    </div>
+                </div>
+				
+				<div class="col-sm-3 col-s-3 Filmler">
+                    <div class="card">
+                        <div class="card-header"> 
+						    <figure id="resim2">  </figure> 
+						</div>
+                        <div class="card-body" id="aciklama2"></div> 
+                    </div>
+                </div>
+				
+				<div class="col-sm-3 col-s-3 Filmler">
+                    <div class="card">
+                        <div class="card-header"> 
+						    <figure id="resim3"> </figure> 
+						</div>
+                        <div class="card-body" id="aciklama3"></div> 
+                    </div>
+                </div>
+				
+				<div class="col-sm-3 col-s-3 Filmler">
+                    <div class="card">
+                        <div class="card-header"> 
+						    <figure id="resim4"> </figure> 
+						</div>
+                        <div class="card-body" id="aciklama4"></div> 
+                    </div>
+                </div>
+				
+				<div class="col-sm-3 col-s-3 Filmler">
+                    <div class="card">
+                        <div class="card-header"> 
+						    <figure id="resim5"> </figure> 
+						</div>
+                        <div class="card-body" id="aciklama5"></div> 
+                    </div>
+                </div>
+				
+				<div class="col-sm-3 col-s-3 Filmler">
+                    <div class="card">
+                        <div class="card-header"> 
+						    <figure id="resim6"> </figure> 
+						</div>
+                        <div class="card-body" id="aciklama6"></div> 
+                    </div>
+                </div>
+				
+		    <article>
+			
+		</section>
+		
+		<footer class="py-4">		 
+			<div class="text-center">Web-Teknolojileri-Projesi Zeynep İnan 2021</div>
+	    </footer>
+		
+		<script>
+		    var aciklama=document.getElementById("aciklama1")
+			var resim1=document.getElementById("resim1")
+			
+			var data=fetch("http://www.omdbapi.com/?t=inception&apikey=eb24c1bc")
+            .then(response=>response.json())
+            .then(veri=>{
+			    aciklama.innerHTML=veri.Title+" "+veri.Year+" Yönetmen: "+veri.Director+" imdb: "+veri.imdbRating
+				resim1.innerHTML= `<img class="card-img-top" src="${veri.Poster}">`
+			});
+            
+			
+			
+			var aciklama2=document.getElementById("aciklama2")
+			var resim2=document.getElementById("resim2")
+			
+			var data=fetch("http://www.omdbapi.com/?t=shutter+island&apikey=eb24c1bc")
+		    .then(response=>response.json())
+            .then(veri=>{
+			    aciklama2.innerHTML=veri.Title+" "+veri.Year+" Yönetmen: "+veri.Director+" imdb: "+veri.imdbRating
+				resim2.innerHTML= `<img class="card-img-top" src="${veri.Poster}">`
+			});
+			
+			
+			
+			var aciklama3=document.getElementById("aciklama3")
+			var resim3=document.getElementById("resim3")
+			
+			var data=fetch("http://www.omdbapi.com/?t=Tenet&apikey=eb24c1bc")
+		    .then(response=>response.json())
+            .then(veri=>{
+			    aciklama3.innerHTML=veri.Title+" "+veri.Year+" Yönetmen: "+veri.Director+" imdb: "+veri.imdbRating
+				resim3.innerHTML= `<img class="card-img-top" src="${veri.Poster}">`
+			});
+			
+			
+			
+			var aciklama4=document.getElementById("aciklama4")
+			var resim4=document.getElementById("resim4")
+			
+			var data=fetch("http://www.omdbapi.com/?t=I+am+sam&apikey=eb24c1bc")
+		    .then(response=>response.json())
+            .then(veri=>{
+			    aciklama4.innerHTML=veri.Title+" "+veri.Year+" Yönetmen: "+veri.Director+" imdb: "+veri.imdbRating
+				resim4.innerHTML= `<img class="card-img-top" src="${veri.Poster}">`
+			});
+			
+			
+			
+			var aciklama5=document.getElementById("aciklama5")
+			var resim5=document.getElementById("resim5")
+			
+			var data=fetch("http://www.omdbapi.com/?t=Dangal&apikey=eb24c1bc")
+		    .then(response=>response.json())
+            .then(veri=>{
+			    aciklama5.innerHTML=veri.Title+" "+veri.Year+" Yönetmen: "+veri.Director+" imdb: "+veri.imdbRating
+				resim5.innerHTML= `<img class="card-img-top" src="${veri.Poster}">`
+			});
+			
+			
+			
+			var aciklama6=document.getElementById("aciklama6")
+			var resim6=document.getElementById("resim6")
+			
+			var data=fetch("http://www.omdbapi.com/?t=Forrest+gump&apikey=eb24c1bc")
+		    .then(response=>response.json())
+            .then(veri=>{
+			    aciklama6.innerHTML=veri.Title+" "+veri.Year+" Yönetmen: "+veri.Director+" imdb: "+veri.imdbRating
+				resim6.innerHTML= `<img class="card-img-top" src="${veri.Poster}">`
+			});
+			
+		</script>
+		
+    </body>
+</html>

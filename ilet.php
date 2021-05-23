@@ -9,6 +9,8 @@
 		
 		<link rel="stylesheet" href="still.css">
 		
+		<link rel="shortcut icon" href="Resimler/logo.ico">
+		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -39,7 +41,11 @@
 			                <tr class="cvBilgileri">
 			                    <th>Cinsiyet</th>
 				                <td>:</td>
-				                <td> <?php echo" ".$_GET["cinsiyet"]." ";?></td>
+				                <td>  <?php if(isset($_GET["cinsiyet"])) 
+								                echo" ".$_GET["cinsiyet"]." ";
+											else
+                                                echo" - ";											
+								      ?></td>
 			                </tr>
 							<tr class="cvBilgileri">
 			                    <th>E-mail</th>
@@ -49,7 +55,7 @@
 			                <tr class="cvBilgileri">
 			                    <th>Mesaj</th>
 				                <td>:</td>
-				                <td> <?php echo" ".$_GET["message"]." "; ?></td>
+				                <td> <?php echo" ".$_GET["message"]." "; ?> </td>
 			                </tr>			
 	                    </table>          						
 			        </div>
